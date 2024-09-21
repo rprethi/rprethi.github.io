@@ -178,3 +178,11 @@ let swiperTestimonial = new Swiper(".testimonial-container", {
     },
   },
 });
+
+document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const dropdownMenu = this.nextElementSibling;
+    dropdownMenu.classList.toggle("show"); // Toggle the visibility
+  });
+});

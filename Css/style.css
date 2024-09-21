@@ -305,6 +305,7 @@ img {
   color: var(--text-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--margin-bottom-0-75);
+  text-align: justify;
 }
 
 .home-description {
@@ -402,7 +403,7 @@ img {
 }
 
 .about-description {
-  text-align: center;
+  text-align: justify;
   margin-bottom: var(--margin-bottom-0-2-5);
 }
 
@@ -425,7 +426,7 @@ img {
 .about-info-title,
 .about-info-name {
   display: block;
-  text-align: center;
+  text-align: justify;
 }
 
 .about-buttons {
@@ -434,27 +435,30 @@ img {
 }
 
 /* skills  */
+
 .skills-content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skills-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.8rem 1.25rem;
   margin-bottom: 1rem;
   margin-right: 1rem;
-  font-size: var(--small-font-size);
-  background: var(--first-color-lighter);
+  font-size: var(--h1-font-size);
   border-radius: 5px;
   font-weight: 600;
-  color: var(--title-color);
+  color: var(--first-color-alt);
   transition: 0.3s ease;
 }
 
 .skills-name:hover {
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color-lighter);
 }
-
 
 .active-box {
   opacity: 1;
@@ -462,33 +466,15 @@ img {
 }
 
 /* projects  */
-.portfolio-container {
-  overflow: initial; transform: scale(1.1); 
-}
 
 .portfolio-content {
   padding: 0 1.5rem;
- 
 }
 
 .portfolio-img {
-  width: 265px;
   border-radius: 0.5rem;
-  justify-self: center;
 }
 
-.portfolio-title {
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--margin-bottom-0-5);
-}
-
-.portfolio-description {
-  margin-bottom: var(--margin-bottom-0-75);
-}
-
-.portfolio-button:hover .button-icon {
-  transform: translateX(0.25rem);
-}
 /* projects  */
 
 .swiper-button-prev::after,
@@ -517,35 +503,6 @@ img {
   position: relative;
   bottom: 170px;
 }
-
-.project {
-  text-align: center;
-}
-
-.project-bg {
-  background-color: var(--first-color-second);
-  padding-top: 3rem;
-}
-
-.project-title {
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--margin-bottom-0-75);
-}
-
-.project-description {
-  margin-bottom: var(--margin-bottom-0-1-5);
-}
-
-.project-title,
-.project-description {
-  color: #fff;
-}
-
-.project-img {
-  width: 232px;
-  justify-self: center;
-}
-
 
 .swiper-container .swiper-pagination-testimonial {
   bottom: 0;
@@ -603,7 +560,7 @@ img {
 .footer-links {
   display: flex;
   flex-direction: column;
-  row-gap: 1.5rem;
+  row-gap: 1rem;
 }
 
 .footer-link:hover {
@@ -693,7 +650,6 @@ img {
   .home-blob {
     width: 180px;
   }
-
 }
 
 /* medium devices */
@@ -711,15 +667,11 @@ img {
     justify-self: center;
   }
 
-  .about-container,
   .skills-container,
-  .portfolio-content,
-  .project-container,
   .contact-container,
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -799,7 +751,7 @@ img {
   }
 
   .about-description {
-    text-align: initial;
+    text-align: justify;
   }
 
   .about-info {
@@ -807,15 +759,7 @@ img {
   }
 
   .about-buttons {
-    justify-content: initial;
-  }
-
-  .portfolio-img {
-    width: 320px;
-  }
-
-  .portfolio-content {
-    align-items: center;
+    justify-content: center;
   }
 
   .project {
@@ -899,4 +843,16 @@ img {
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -4.5rem;
   }
+}
+
+.dropdown-menu {
+  display: none; /* Initially hide dropdown */
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
