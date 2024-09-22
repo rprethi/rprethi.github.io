@@ -466,16 +466,34 @@ img {
 }
 
 /* projects  */
+.portfolio-container {
+  overflow: initial;
+}
 
 .portfolio-content {
   padding: 0 1.5rem;
 }
 
 .portfolio-img {
+  width: 100%;
   border-radius: 0.5rem;
+  justify-self: center;
 }
 
+.portfolio-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--margin-bottom-0-5);
+}
+
+.portfolio-description {
+  margin-bottom: var(--margin-bottom-0-75);
+}
+
+.portfolio-button:hover .button-icon {
+  transform: translateX(0.25rem);
+}
 /* projects  */
+
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -504,9 +522,6 @@ img {
   bottom: 170px;
 }
 
-.swiper-container .swiper-pagination-testimonial {
-  bottom: 0;
-}
 /* contact section  */
 .contact-container {
   row-gap: 3rem;
@@ -669,6 +684,7 @@ img {
 
   .skills-container,
   .contact-container,
+  .project-container,
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
