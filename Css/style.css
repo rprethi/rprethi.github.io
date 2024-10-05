@@ -65,7 +65,7 @@ body.dark-theme {
   --body-color: hsl(var(--hue-color), 28%, 12%);
   --container-color: hsl(var(--hue-color), 29%, 16%);
   transition: 0.3s ease-in;
-  .portfolio-content a{
+  .portfolio-content a {
     color: #fff;
   }
 }
@@ -867,8 +867,9 @@ img {
   display: none; /* Initially hide dropdown */
   position: absolute;
   background-color: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
   z-index: 1000;
+  color: var(--first-color);
 }
 
 .dropdown:hover .dropdown-menu {
@@ -877,7 +878,6 @@ img {
 
 .projet-container {
   overflow: initial;
-
 }
 
 .projet-content {
@@ -887,11 +887,12 @@ img {
 .projet-img {
   width: 100%;
   border-radius: 0.5rem;
-  justify-self: center;  
+  justify-self: center;
 }
 
 .projet-section {
   overflow: hidden;
+  margin-bottom: 10vh;
 }
 
 .tictac-img {
@@ -913,4 +914,33 @@ img {
   height: 375px;
   border-radius: 0.5rem;
   justify-self: center;
+}
+.processus-section {
+  overflow: hidden;
+}
+.processus-container {
+  overflow: hidden;
+}
+
+.nav-logo {
+  letter-spacing: 2px; /* Adjust this value for the desired spacing */
+  text-decoration: none; /* Optional: remove underline */
+}
+
+.purple-text {
+  color: var(--first-color); /* Change color to red */
+}
+.mauve {
+  color: var(--first-color);
+}
+
+.auto-typed {
+  color: var(--first-color);
+}
+.contact-container a:hover {
+  color: var(--first-color);
+}
+
+.footer-copy {
+  color: #fff;
 }

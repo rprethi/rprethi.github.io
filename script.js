@@ -2,30 +2,44 @@ const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close");
 
-  let grottecontainer = new Swiper(".projet-container", {
-    effect: 'coverflow', // Set the effect to coverflow
-    grabCursor: true,
-    loop: true,
-    centeredSlides: true, 
-    slidesPerView: 'auto', 
-    coverflowEffect: {
-        rotate: 50, // Rotation effect
-        stretch: 0, // Stretch between slides
-        depth: 100, // Depth of the effect
-        modifier: 1, // Effect modifier
-        slideShadows: true, // Enable slide shadows
-    },
-    autoplay: {
-        delay:8000,
-        disableOnInteraction: true,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    
+let grottecontainer = new Swiper(".projet-container", {
+  effect: "coverflow", // Set the effect to coverflow
+  grabCursor: true,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
 
+let processuscontainer = new Swiper(".processus-container", {
+  effect: "fade",
+  grabCursor: true,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 if (navToggle) {
   navToggle.addEventListener("click", () => {
@@ -176,19 +190,20 @@ let swiperPortfolio = new Swiper(".portfolio-container", {
   cssMode: true,
   loop: true,
   autoplay: {
-      delay: 8000,
-      disableOnInteraction: true,
+    delay: 8000,
+    disableOnInteraction: true,
   },
   navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    el: ".swiper-pagination",
+    clickable: true,
   },
-  mousewheel: { // Enable mouse wheel control
-      invert: false, // Set to true if you want the scroll direction inverted
+  mousewheel: {
+    // Enable mouse wheel control
+    invert: false, // Set to true if you want the scroll direction inverted
   },
 });
 
@@ -217,4 +232,9 @@ document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach((link) => {
   });
 });
 
-
+var typed = new Typed(".auto-typed", {
+  strings: ["le design web", "la programmation web"],
+  typeSpeed: 150,  
+  backSpeed: 150,    
+  loop: true,
+});
