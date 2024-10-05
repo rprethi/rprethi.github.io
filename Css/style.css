@@ -65,7 +65,7 @@ body.dark-theme {
   --body-color: hsl(var(--hue-color), 28%, 12%);
   --container-color: hsl(var(--hue-color), 29%, 16%);
   transition: 0.3s ease-in;
-  .portfolio-content a{
+  .portfolio-content a {
     color: #fff;
   }
 }
@@ -877,7 +877,6 @@ img {
 
 .projet-container {
   overflow: initial;
-
 }
 
 .projet-content {
@@ -887,9 +886,16 @@ img {
 .projet-img {
   width: 100%;
   border-radius: 0.5rem;
-  justify-self: center;  
+  justify-self: center;
 }
 
 .projet-section {
   overflow: hidden;
+}
+
+.tictac-video {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  justify-self: center;
 }
