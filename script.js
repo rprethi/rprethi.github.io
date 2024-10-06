@@ -17,7 +17,7 @@ let grottecontainer = new Swiper(".projet-container", {
   },
   autoplay: {
     delay: 8000,
-    disableOnInteraction: true,
+    disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
@@ -238,3 +238,4 @@ var typed = new Typed(".auto-typed", {
   backSpeed: 150,    
   loop: true,
 });
+

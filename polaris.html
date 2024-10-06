@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prethiah Rajaratnam</title>
+    <link rel="icon" type="image/svg" href="./Assets/icon.svg">
     <link rel="stylesheet" href="Libraries/swiper-bundle.min.css" />
     <link rel="stylesheet" href="Css/style.css" />
   </head>
   <body>
+    <!-- header  -->
     <!-- header  -->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="./index.html" class="nav-logo">
           <span class="purple-text">prethi</span>ah
         </a>
-
         <div class="nav-menu" id="nav-menu">
           <ul class="nav-list grid">
             <li class="nav-item">
@@ -32,11 +33,27 @@
                 ><i class="fa-solid fa-file nav-icon"></i> Compétences</a
               >
             </li>
-            <li class="nav-item">
-              <a href="./index.html#portfolio" class="nav-link"
-                ><i class="fa-solid fa-image nav-icon"></i> Projets</a
+            <li class="nav-item dropdown">
+              <a
+                href="./index.html#portfolio"
+                class="nav-link active"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                onclick="toggleDropdown(event)"
               >
+                <i class="fa-solid fa-image nav-icon"></i> Projets
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item active" href="./polaris.html">Polaris</a>
+                <a class="dropdown-item" href="./tictac.html">Tic tac</a>
+                <a class="dropdown-item" href="./grottefantastique.html"
+                  >Grotte Fantastique</a
+                >
+                <a class="dropdown-item" href="./artechouse.html">Artechouse</a>
+              </div>
             </li>
+
             <li class="nav-item">
               <a href="./index.html#contact" class="nav-link"
                 ><i class="fa-solid fa-message nav-icon"></i> Contact</a
@@ -180,6 +197,7 @@
     <a href="#home" class="scrollup" id="scroll-up">
       <i class="fa-solid fa-arrow-up scroll-up-icon"></i>
     </a>
+    <script src="Libraries/swiper-bundle.min.js"></script>
     <script
       src="https://kit.fontawesome.com/9b634c15bd.js"
       crossorigin="anonymous"

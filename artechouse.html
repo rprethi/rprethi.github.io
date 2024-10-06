@@ -4,73 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prethiah Rajaratnam</title>
+    <link rel="icon" type="image/svg" href="./Assets/icon.svg">
     <link rel="stylesheet" href="Libraries/swiper-bundle.min.css" />
     <link rel="stylesheet" href="Css/style.css" />
   </head>
   <body>
     <!-- header  -->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="./index.html" class="nav-logo">
-          <span class="purple-text">prethi</span>ah
-        </a>
+   <!-- header  -->
+   <header class="header" id="header">
+    <nav class="nav container">
+      <a href="./index.html" class="nav-logo">
+        <span class="purple-text">prethi</span>ah
+      </a>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list grid">
+          <li class="nav-item">
+            <a href="./index.html#home" class="nav-link"
+              ><i class="fa-solid fa-house nav-icon"></i> Accueil</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#about" class="nav-link"
+              ><i class="fa-solid fa-user nav-icon"></i> À propos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#skills" class="nav-link"
+              ><i class="fa-solid fa-file nav-icon"></i> Compétences</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              href="./index.html#portfolio"
+              class="nav-link active"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              onclick="toggleDropdown(event)"
+            >
+              <i class="fa-solid fa-image nav-icon"></i> Projets
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="./polaris.html">Polaris</a>
+              <a class="dropdown-item" href="./tictac.html">Tic tac</a>
+              <a class="dropdown-item" href="./grottefantastique.html"
+                >Grotte Fantastique</a
+              >
+              <a class="dropdown-item active" href="./artechouse.html">Artechouse</a>
+            </div>
+          </li>
 
-        <div class="nav-menu" id="nav-menu">
-          <ul class="nav-list grid">
-            <li class="nav-item">
-              <a href="./index.html#home" class="nav-link"
-                ><i class="fa-solid fa-house nav-icon"></i> Accueil</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="./index.html#about" class="nav-link"
-                ><i class="fa-solid fa-user nav-icon"></i> À propos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="./index.html#skills" class="nav-link"
-                ><i class="fa-solid fa-file nav-icon"></i> Compétences</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                href="./index.html#portfolio"
-                class="nav-link"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <i class="fa-solid fa-image nav-icon"></i> Projets
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="./polaris.html">Polaris</a>
-                <a class="dropdown-item" href="./tictac.html">Tic tac</a>
-                <a class="dropdown-item" href="./polaris.html"
-                  >Grotte Fantastique</a
-                >
-                <a class="dropdown-item" href="./polaris.html">Lorem</a>
-              </div>
-            </li>
+          <li class="nav-item">
+            <a href="./index.html#contact" class="nav-link"
+              ><i class="fa-solid fa-message nav-icon"></i> Contact</a
+            >
+          </li>
+        </ul>
+        <i class="fa-solid fa-xmark nav-close" id="nav-close"></i>
+      </div>
 
-            <li class="nav-item">
-              <a href="./index.html#contact" class="nav-link"
-                ><i class="fa-solid fa-message nav-icon"></i> Contact</a
-              >
-            </li>
-          </ul>
-          <i class="fa-solid fa-xmark nav-close" id="nav-close"></i>
+      <div class="nav-btns">
+        <!-- theme btn  -->
+        <i class="fa-regular fa-moon change-theme" id="theme-button"></i>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
         </div>
-
-        <div class="nav-btns">
-          <!-- theme btn  -->
-          <i class="fa-regular fa-moon change-theme" id="theme-button"></i>
-
-          <div class="nav-toggle" id="nav-toggle">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
     <main class="main">
       <section class="about section">
@@ -192,6 +194,7 @@
     <a href="#home" class="scrollup" id="scroll-up">
       <i class="fa-solid fa-arrow-up scroll-up-icon"></i>
     </a>
+    <script src="Libraries/swiper-bundle.min.js"></script>
     <script
       src="https://kit.fontawesome.com/9b634c15bd.js"
       crossorigin="anonymous"
