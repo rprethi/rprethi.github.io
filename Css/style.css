@@ -82,11 +82,11 @@ body.dark-theme {
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
   }
-  
+
   .nav-item {
     position: relative;
   }
-  
+
   .dropdown-menu {
     position: absolute;
     bottom: 100%; /* Positionne le dropdown au-dessus de l'élément parent */
@@ -100,22 +100,21 @@ body.dark-theme {
     z-index: 1000;
     min-width: 150px;
   }
-  
+
   .dropdown-menu.show {
     display: block; /* Affiche le dropdown si la classe 'show' est ajoutée */
   }
-  
+
   .dropdown-item {
     color: var(--text-color);
     padding: 0.75rem 1rem;
     text-decoration: none;
     display: block;
   }
-  
+
   .dropdown-item:hover {
     color: var(--container-color);
   }
-  
 }
 .nav-btns {
   display: flex;
@@ -735,6 +734,10 @@ img {
     margin-right: auto;
   }
 
+  .nav-item {
+    margin-top: 10px;
+  }
+
   body {
     margin: 0;
   }
@@ -865,7 +868,6 @@ img {
   .main,
   .footer-container {
     padding: 0;
-
   }
 
   .home-blob {
