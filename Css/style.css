@@ -967,7 +967,7 @@ img {
 
 .tictac-img {
   width: 100%;
-  height: 375px;
+  height: 50vh;
   border-radius: 0.5rem;
   justify-self: center;
 }
@@ -1017,4 +1017,10 @@ img {
 
 .active {
   color: var(--first-color);
+}
+
+.artechouse-app {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
