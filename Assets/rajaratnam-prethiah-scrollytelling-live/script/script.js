@@ -22,14 +22,6 @@ window.addEventListener("scroll", function () {
   }, 100);
 });
 
-// Animation Appel à l'action (Introduction)
-const play = document.querySelector(".action");
-
-gsap.from(".action", {
-  repeat: -1,
-  y: "-20",
-  yoyo: true,
-});
 
 /*-- ---------- CHAP 1-------------------- --*/
 gsap

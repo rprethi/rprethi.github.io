@@ -207,29 +207,30 @@ let swiperPortfolio = new Swiper(".portfolio-container", {
   },
 });
 
-let swiperTestimonial = new Swiper(".testimonial-container", {
-  cssMode: true,
-  loop: true,
-  spaceBetween: 48,
+// Ouvre le dropdown par défaut
+const dropdownMenu = document.querySelector('.nav-item.dropdown .dropdown-menu');
+dropdownMenu.classList.add('show'); // Assurez-vous que le dropdown est ouvert par défaut
 
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  breakpoints: {
-    568: {
-      slidesPerView: 2,
-    },
-  },
-});
-
+// Gère les clics sur les liens de navigation
 document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach((link) => {
   link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const dropdownMenu = this.nextElementSibling;
-    dropdownMenu.classList.toggle("show"); // Toggle the visibility
+    e.preventDefault(); // Empêche le comportement par défaut du lien
+
+    const dropdownMenu = this.nextElementSibling; // Sélectionne le dropdown associé
+
+    // Toggle le dropdown
+    dropdownMenu.classList.toggle("show");
   });
+});
+
+// Ferme le dropdown si on clique à l'extérieur
+document.addEventListener("click", function (e) {
+  if (!e.target.closest('.nav-item.dropdown')) {
+    // Ferme le dropdown si on clique à l'extérieur
+    document.querySelectorAll(".nav-item.dropdown .dropdown-menu").forEach((menu) => {
+      menu.classList.remove("show");
+    });
+  }
 });
 
 var typed = new Typed(".auto-typed", {

@@ -972,16 +972,9 @@ img {
   justify-self: center;
 }
 
-.artechouse-img {
+.video-polaris {
   width: 100%;
-  height: 375px;
-  border-radius: 0.5rem;
-  justify-self: center;
-}
-
-.polaris-img {
-  width: 100%;
-  height: 375px;
+  height: 70vh;
   border-radius: 0.5rem;
   justify-self: center;
 }
@@ -1024,3 +1017,4 @@ img {
   justify-content: center; 
   align-items: center; 
 }
+
