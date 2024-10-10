@@ -24,7 +24,6 @@ let grottecontainer = new Swiper(".projet-container", {
     clickable: true,
   },
 });
-
 let processuscontainer = new Swiper(".processus-container", {
   effect: "fade",
   grabCursor: true,
@@ -52,6 +51,8 @@ if (navClose) {
     navMenu.classList.remove("show-menu");
   });
 }
+
+
 
 // remove menu mobile
 const navLink = document.querySelectorAll(".nav-link");
@@ -140,14 +141,6 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-/*==================== SHOW SCROLL TOP ====================*/
-function scrollUp() {
-  const scrollUp = document.getElementById("scroll-up");
-  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-  if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
-  else scrollUp.classList.remove("show-scroll");
-}
-window.addEventListener("scroll", scrollUp);
 
 //dark light mode------------------
 const themeButton = document.getElementById("theme-button");
@@ -233,10 +226,4 @@ document.addEventListener("click", function (e) {
   }
 });
 
-var typed = new Typed(".auto-typed", {
-  strings: ["le design web", "la programmation web"],
-  typeSpeed: 150,  
-  backSpeed: 150,    
-  loop: true,
-});
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prethiah Rajaratnam</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="icon" type="image/svg" href="./Assets/icon.svg" />
     <link rel="stylesheet" href="Libraries/swiper-bundle.min.css" />
     <link rel="stylesheet" href="Css/style.css" />
@@ -13,7 +14,7 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav-logo">
-          <span class="purple-text">Prethi</span>ah
+          <span>prethi</span><img src="./Assets/icon.svg" alt="" />h
         </a>
 
         <div class="nav-menu" id="nav-menu">
@@ -24,18 +25,18 @@
               >
             </li>
             <li class="nav-item">
+              <a href="#portfolio" class="nav-link"
+                ><i class="fa-solid fa-image nav-icon"></i> Projets</a
+              >
+            </li>
+            <li class="nav-item">
               <a href="#about" class="nav-link"
-                ><i class="fa-solid fa-user nav-icon"></i> À propos</a
+                ><i class="fa-solid fa-user nav-icon"></i> Propos</a
               >
             </li>
             <li class="nav-item">
               <a href="#skills" class="nav-link"
                 ><i class="fa-solid fa-file nav-icon"></i> Compétences</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#portfolio" class="nav-link"
-                ><i class="fa-solid fa-image nav-icon"></i> Projets</a
               >
             </li>
             <li class="nav-item">
@@ -116,8 +117,8 @@
               <h1 class="home-title">Prethiah Rajaratnam</h1>
               <h3 class="home-subtitle">
                 Bienvenue sur mon portfolio, où je présente mes compétences, mon
-                expérience et ma passion pour
-                <span class="auto-typed">le développement web.</span>
+                expérience et ma passion pour<br />
+                <span class="auto-typed"></span>
               </h3>
               <p class="home-description"></p>
               <a href="mailto:prethiah@gmail.com" class="button button-flex">
@@ -126,13 +127,131 @@
             </div>
           </div>
           <div class="home-scroll">
-            <a href="#about" class="home-scroll-button button-flex">
-              <!-- <i class="fa-solid fa-computer-mouse home-scroll-mouse"></i> -->
-              <img class="home-scroll-mouse" src="Assets/mouse.svg" alt="" />
+            <a href="#portfolio" class="home-scroll-button button-flex">
               <span class="home-scroll-name">Défiler vers le bas</span>
               <i class="fa-solid fa-angles-down home-scroll-arrow"></i>
             </a>
           </div>
+        </div>
+      </section>
+      <!-- portfolio -->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section-title">Projets</h2>
+        <span class="section-subtitle"
+          >Programmation Web - Modélisation 3D - Montage Vidéo</span
+        >
+
+        <div class="portfolio-container container swiper-container">
+          <div class="swiper-wrapper">
+            <!-- project1 -->
+            <div class="portfolio-content grid swiper-slide">
+              <a href="./polaris.html">
+                <img src="./Assets/polaris.jpg" alt="" class="portfolio-img" />
+              </a>
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Polaris</h3>
+                <p class="portfolio-description">
+                  <strong>Web</strong><br />
+                  Un jeune garçon, guidé par une étoile lumineuse, explore
+                  l'univers fascinant des constellations dans une aventure
+                  onirique et mystérieuse.
+                </p>
+                <a
+                  href="./polaris.html"
+                  class="button button-flex button-small portfolio-button"
+                >
+                  Voir plus
+                  <i class="fa-solid fa-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- project2 -->
+            <div class="portfolio-content grid swiper-slide">
+              <a href="./artechouse.html">
+                <img
+                  src="./Assets/artechouse.png"
+                  alt=""
+                  class="portfolio-img"
+                />
+              </a>
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Artechouse</h3>
+                <p class="portfolio-description">
+                  <strong>Web</strong><br />
+                  Création d'une page web pastiche d'<a
+                    href="https://www.artechouse.com/"
+                    target="_blank"
+                    >Artechouse</a
+                  >, développée avec Bootstrap, alliant design moderne et
+                  fonctionnalité optimisée.
+                </p>
+                <a
+                  href="./artechouse.html"
+                  class="button button-flex button-small portfolio-button"
+                >
+                  Voir plus
+                  <i class="fa-solid fa-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- project3 -->
+            <div class="portfolio-content grid swiper-slide">
+              <a href="./grottefantastique.html">
+                <img
+                  src="./Assets/grotte_fantastique.png"
+                  alt=""
+                  class="portfolio-img"
+                />
+              </a>
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Grotte fantastique</h3>
+                <p class="portfolio-description">
+                  <strong>Modélisation 3D</strong><br />
+                  La grotte fantastique vous plonge dans un monde mystérieux,
+                  marqué par la disparition d'un sorcier aventurier et la
+                  présence d'objets magiques.
+                </p>
+                <a
+                  href="./grottefantastique.html"
+                  class="button button-flex button-small portfolio-button"
+                >
+                  Voir plus
+                  <i class="fa-solid fa-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- project4 -->
+            <div class="portfolio-content grid swiper-slide">
+              <a href="./tictac.html">
+                <img src="./Assets/tictac.jpg" alt="" class="portfolio-img" />
+              </a>
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Tic Tac</h3>
+                <p class="portfolio-description">
+                  <strong>Montage Vidéo</strong><br />
+                  Nicole, jeune candidate prometteuse, rate son entretien après
+                  s'être endormie dans la salle d'attente, révélant les périls
+                  d'une précaution excessive.
+                </p>
+                <a
+                  href="./tictac.html"
+                  class="button button-flex button-small portfolio-button"
+                >
+                  Voir plus
+                  <i class="fa-solid fa-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-angles">
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-angle-right swiper-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-angle-left swiper-icon"></i>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
@@ -384,127 +503,6 @@
         </div>
       </section>
 
-      <!-- portfolio -->
-      <section class="portfolio section" id="portfolio">
-        <h2 class="section-title">Projets</h2>
-        <span class="section-subtitle"
-          >Programmation Web - Modélisation 3D - Montage Vidéo</span
-        >
-
-        <div class="portfolio-container container swiper-container">
-          <div class="swiper-wrapper">
-            <!-- project1 -->
-            <div class="portfolio-content grid swiper-slide">
-              <a href="./polaris.html">
-                <img src="./Assets/polaris.jpg" alt="" class="portfolio-img" />
-              </a>
-              <div class="portfolio-data">
-                <h3 class="portfolio-title">Polaris</h3>
-                <p class="portfolio-description">
-                  <strong>Web</strong><br />
-                  Un jeune garçon, guidé par une étoile lumineuse, explore
-                  l'univers fascinant des constellations dans une aventure
-                  onirique et mystérieuse.
-                </p>
-                <a
-                  href="./polaris.html"
-                  class="button button-flex button-small portfolio-button"
-                >
-                  Voir plus
-                  <i class="fa-solid fa-arrow-right button-icon"></i>
-                </a>
-              </div>
-            </div>
-            <!-- project2 -->
-            <div class="portfolio-content grid swiper-slide">
-              <a href="./artechouse.html">
-                <img
-                  src="./Assets/artechouse.png"
-                  alt=""
-                  class="portfolio-img"
-                />
-              </a>
-              <div class="portfolio-data">
-                <h3 class="portfolio-title">Artechouse</h3>
-                <p class="portfolio-description">
-                  <strong>Web</strong><br />
-                  Création d'une page web pastiche d'<a
-                    href="https://www.artechouse.com/"
-                    target="_blank"
-                    >Artechouse</a
-                  >, développée avec Bootstrap, alliant design moderne et
-                  fonctionnalité optimisée.
-                </p>
-                <a
-                  href="./artechouse.html"
-                  class="button button-flex button-small portfolio-button"
-                >
-                  Voir plus
-                  <i class="fa-solid fa-arrow-right button-icon"></i>
-                </a>
-              </div>
-            </div>
-            <!-- project3 -->
-            <div class="portfolio-content grid swiper-slide">
-              <a href="./grottefantastique.html">
-                <img
-                  src="./Assets/grotte_fantastique.png"
-                  alt=""
-                  class="portfolio-img"
-                />
-              </a>
-              <div class="portfolio-data">
-                <h3 class="portfolio-title">Grotte fantastique</h3>
-                <p class="portfolio-description">
-                  <strong>Modélisation 3D</strong><br />
-                  La grotte fantastique vous plonge dans un monde mystérieux,
-                  marqué par la disparition d'un sorcier aventurier et la
-                  présence d'objets magiques.
-                </p>
-                <a
-                  href="./grottefantastique.html"
-                  class="button button-flex button-small portfolio-button"
-                >
-                  Voir plus
-                  <i class="fa-solid fa-arrow-right button-icon"></i>
-                </a>
-              </div>
-            </div>
-            <!-- project4 -->
-            <div class="portfolio-content grid swiper-slide">
-              <a href="./tictac.html">
-                <img src="./Assets/tictac.jpg" alt="" class="portfolio-img" />
-              </a>
-              <div class="portfolio-data">
-                <h3 class="portfolio-title">Tic Tac</h3>
-                <p class="portfolio-description">
-                  <strong>Montage Vidéo</strong><br />
-                  Nicole, jeune candidate prometteuse, rate son entretien après
-                  s'être endormie dans la salle d'attente, révélant les périls
-                  d'une précaution excessive.
-                </p>
-                <a
-                  href="./tictac.html"
-                  class="button button-flex button-small portfolio-button"
-                >
-                  Voir plus
-                  <i class="fa-solid fa-arrow-right button-icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-angles">
-            <div class="swiper-button-next">
-              <i class="fa-solid fa-angle-right swiper-icon"></i>
-            </div>
-            <div class="swiper-button-prev">
-              <i class="fa-solid fa-angle-left swiper-icon"></i>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-
       <!-- contact me  -->
       <section class="contact section" id="contact">
         <h2 class="section-title">Contactez-moi</h2>
@@ -549,9 +547,6 @@
           <div class="footer-container container grid">
             <div>
               <h1 class="footer-title">Prethiah Rajaratnam</h1>
-              <span class="footer-subtitle"
-                >Étudiante en Techniques d'intégration multimédia</span
-              >
             </div>
             <ul class="footer-links">
               <li>
@@ -594,20 +589,15 @@
               </a>
             </div>
           </div>
-          <p class="footer-copy">Prethiah Rajaratnam</p>
         </div>
       </footer>
     </main>
-    <a href="#home" class="scrollup" id="scroll-up">
-      <i class="fa-solid fa-arrow-up scroll-up-icon"></i>
-    </a>
-
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="Libraries/swiper-bundle.min.js"></script>
     <script
       src="https://kit.fontawesome.com/9b634c15bd.js"
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script src="scriptmain.js"></script>
   </body>
 </html>

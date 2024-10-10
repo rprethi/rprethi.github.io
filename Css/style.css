@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+@font-face {
+  src: url("../fonts/NewakeFont-Demo.otf") format("opentype");
+  font-family: "World";
+}
+body{
+  zoom: 125%;
+}
 :root {
   --header-height: 3rem;
 
@@ -303,7 +310,6 @@ img {
 
 .home-content {
   grid-template-columns: 0.5fr 3fr;
-  padding-top: 3.5rem;
   align-items: center;
 }
 
@@ -337,6 +343,10 @@ img {
 
 .home-title {
   font-size: var(--big-font-size);
+  font-family: "World";
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--first-color);
 }
 
 .home-subtitle {
@@ -352,7 +362,9 @@ img {
 }
 
 .home-scroll {
-  /* display: none; */
+display: flex;
+justify-content: center;
+margin-top: 5vh;
 }
 
 .home-scroll-button {
@@ -362,11 +374,6 @@ img {
 
 .home-scroll-button:hover {
   transform: translateY(0.25rem);
-}
-
-.home-scroll-mouse {
-  margin-right: 0.125rem;
-  width: 24px;
 }
 
 .home-scroll-name {
@@ -538,6 +545,10 @@ img {
   content: "";
 }
 
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color)
+}
+
 .swiper-icon {
   font-size: 1.25rem;
   color: var(--first-color);
@@ -627,13 +638,6 @@ img {
 
 .footer-social:hover {
   color: var(--first-color-lighter);
-}
-
-.footer-copy {
-  font-size: var(--smaller-font-size);
-  text-align: center;
-  color: var(--text-color-light);
-  margin-top: var(--margin-bottom-0-3);
 }
 
 .footer-title,
@@ -786,16 +790,14 @@ img {
   }
 
   .home-content {
-    padding-top: 5.5rem;
+    padding-top: 3.5rem;
     column-gap: 2rem;
   }
 
   .home-blob {
     width: 270px;
   }
-  .home-scroll {
-    display: block;
-  }
+  
   .home-scroll-button {
     margin-left: 3rem;
   }
@@ -1016,5 +1018,26 @@ img {
   display: flex;
   justify-content: center; 
   align-items: center; 
+}
+
+.skills-content-projet {
+  display: flex;
+  align-items:flex-start;
+  justify-content: flex-start;
+  padding: 0.8rem 0;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  font-size: var(--h1-font-size);
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--first-color-alt);
+  transition: 0.3s ease;
+}
+
+
+.nav-logo img {
+  height: 1em; 
+  vertical-align: middle; 
+  margin-right: 2px;
 }
 
