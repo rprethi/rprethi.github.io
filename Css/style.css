@@ -4,7 +4,7 @@
   src: url("../fonts/NewakeFont-Demo.otf") format("opentype");
   font-family: "World";
 }
-body{
+body {
   zoom: 125%;
 }
 :root {
@@ -334,7 +334,10 @@ img {
 }
 
 .home-blob-img {
-  width: 240px;
+  position: relative;
+  width: 130%; 
+  height: auto; 
+  transform: translate(-30px);
 }
 
 .home-data {
@@ -362,9 +365,9 @@ img {
 }
 
 .home-scroll {
-display: flex;
-justify-content: center;
-margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
 }
 
 .home-scroll-button {
@@ -546,7 +549,7 @@ margin-top: 5vh;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--first-color)
+  background-color: var(--first-color);
 }
 
 .swiper-icon {
@@ -720,8 +723,8 @@ margin-top: 5vh;
   }
 
   .home-blob-img {
+    position: relative;
     order: 1;
-    justify-self: center;
   }
 
   .skills-container,
@@ -797,7 +800,7 @@ margin-top: 5vh;
   .home-blob {
     width: 270px;
   }
-  
+
   .home-scroll-button {
     margin-left: 3rem;
   }
@@ -1016,13 +1019,13 @@ margin-top: 5vh;
 
 .artechouse-app {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-content-projet {
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   justify-content: flex-start;
   padding: 0.8rem 0;
   margin-bottom: 1rem;
@@ -1034,10 +1037,8 @@ margin-top: 5vh;
   transition: 0.3s ease;
 }
 
-
 .nav-logo img {
-  height: 1em; 
-  vertical-align: middle; 
+  height: 1em;
+  vertical-align: middle;
   margin-right: 2px;
 }
-
