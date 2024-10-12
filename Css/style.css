@@ -361,7 +361,6 @@ img {
   color: var(--text-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--margin-bottom-0-75);
-  text-align: justify;
 }
 
 .home-description {
