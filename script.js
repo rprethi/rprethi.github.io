@@ -3,7 +3,7 @@ const navMenu = document.getElementById("nav-menu"),
   navClose = document.getElementById("nav-close");
 
 let grottecontainer = new Swiper(".projet-container", {
-  effect: "coverflow", // Set the effect to coverflow
+  effect: "coverflow",
   grabCursor: true,
   loop: true,
   centeredSlides: true,
@@ -24,6 +24,7 @@ let grottecontainer = new Swiper(".projet-container", {
     clickable: true,
   },
 });
+
 let processuscontainer = new Swiper(".processus-container", {
   effect: "fade",
   grabCursor: true,
@@ -52,9 +53,6 @@ if (navClose) {
   });
 }
 
-
-
-// remove menu mobile
 const navLink = document.querySelectorAll(".nav-link");
 
 function linkAction() {
@@ -63,50 +61,6 @@ function linkAction() {
 }
 
 navLink.forEach((n) => n.addEventListener("click", linkAction));
-
-// qualifi
-const tabs = document.querySelectorAll("[data-target]"),
-  tabContents = document.querySelectorAll("[data-content]");
-
-tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    const target = document.querySelector(tab.dataset.target);
-
-    tabContents.forEach((tabContent) => {
-      tabContent.classList.remove("qualification-active");
-    });
-    target.classList.add("qualification-active");
-
-    tabs.forEach((tab) => {
-      tab.classList.remove("qualification-active");
-    });
-
-    tab.classList.add("qualification-active");
-  });
-});
-
-// services box
-const boxViews = document.querySelectorAll(".services-box"),
-  boxBtns = document.querySelectorAll(".services-button"),
-  boxCloses = document.querySelectorAll(".services-box-close");
-
-let box = function (boxClick) {
-  boxViews[boxClick].classList.add("active-box");
-};
-
-boxBtns.forEach((boxBtn, i) => {
-  boxBtn.addEventListener("click", () => {
-    box(i);
-  });
-});
-
-boxCloses.forEach((boxClose) => {
-  boxClose.addEventListener("click", () => {
-    boxViews.forEach((boxView) => {
-      boxView.classList.remove("active-box");
-    });
-  });
-});
 
 //scroll section active link
 const sections = document.querySelectorAll("section[id]");
@@ -141,7 +95,6 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-
 //dark light mode------------------
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
@@ -173,7 +126,6 @@ themeButton.addEventListener("click", () => {
   // Add or remove the dark / icon theme
   document.body.classList.toggle(darkTheme);
   themeButton.classList.toggle(iconTheme);
-  // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
@@ -195,10 +147,6 @@ let swiperPortfolio = new Swiper(".portfolio-container", {
     clickable: true,
   },
   mousewheel: {
-    // Enable mouse wheel control
-    invert: false, // Set to true if you want the scroll direction inverted
+    invert: false,
   },
 });
-
-
-

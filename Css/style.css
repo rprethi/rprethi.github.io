@@ -4,9 +4,13 @@
   src: url("../fonts/NewakeFont-Demo.otf") format("opentype");
   font-family: "World";
 }
+
+/*Affichage zoom in*/
+
 body {
   zoom: 125%;
 }
+
 :root {
   --header-height: 3rem;
 
@@ -63,7 +67,6 @@ body {
   }
 }
 
-
 /* dark color scheme  */
 body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
@@ -97,20 +100,20 @@ body.dark-theme {
 
   .dropdown-menu {
     position: absolute;
-    bottom: 100%; /* Positionne le dropdown au-dessus de l'élément parent */
+    bottom: 100%;
     left: 0;
     background-color: var(--container-color);
     border: none;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: none; /* Masquer par défaut */
+    display: none;
     padding: 1rem;
     z-index: 1000;
     min-width: 150px;
   }
 
   .dropdown-menu.show {
-    display: block; /* Affiche le dropdown si la classe 'show' est ajoutée */
+    display: block;
   }
 
   .dropdown-item {
@@ -995,25 +998,12 @@ img {
   text-decoration: none; /* Optional: remove underline */
 }
 
-.purple-text {
-  color: var(--first-color); /* Change color to red */
-}
-.mauve {
-  color: var(--first-color);
-}
-
-.auto-typed {
-  color: var(--first-color);
-}
-.contact-container a:hover {
-  color: var(--first-color);
-}
-
-.footer-copy {
-  color: #fff;
-}
-
-.active {
+.purple-text,
+.mauve,
+.auto-typed,
+.contact-container a:hover,
+.active,
+.a-content {
   color: var(--first-color);
 }
 
@@ -1047,7 +1037,7 @@ img {
   margin-bottom: 5vh;
 }
 
-
-.a-content {
-  color: var(--first-color);
+mark {
+  background-color: var(--first-color);
+  color: #fff;
 }
