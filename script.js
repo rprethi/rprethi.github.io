@@ -200,30 +200,5 @@ let swiperPortfolio = new Swiper(".portfolio-container", {
   },
 });
 
-// Ouvre le dropdown par défaut
-const dropdownMenu = document.querySelector('.nav-item.dropdown .dropdown-menu');
-dropdownMenu.classList.add('show'); // Assurez-vous que le dropdown est ouvert par défaut
-
-// Gère les clics sur les liens de navigation
-document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach((link) => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault(); // Empêche le comportement par défaut du lien
-
-    const dropdownMenu = this.nextElementSibling; // Sélectionne le dropdown associé
-
-    // Toggle le dropdown
-    dropdownMenu.classList.toggle("show");
-  });
-});
-
-// Ferme le dropdown si on clique à l'extérieur
-document.addEventListener("click", function (e) {
-  if (!e.target.closest('.nav-item.dropdown')) {
-    // Ferme le dropdown si on clique à l'extérieur
-    document.querySelectorAll(".nav-item.dropdown .dropdown-menu").forEach((menu) => {
-      menu.classList.remove("show");
-    });
-  }
-});
 
 
