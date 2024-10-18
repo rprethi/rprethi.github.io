@@ -908,6 +908,7 @@ img {
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -4.5rem;
   }
+  
 }
 
 @media screen and (min-width: 767px) {
@@ -974,7 +975,7 @@ img {
 
 .tictac-img {
   width: 100%;
-  height: 70vh;
+  height: 50vh;
   border-radius: 0.5rem;
   justify-self: center;
 }
@@ -1040,3 +1041,12 @@ mark {
   background-color: var(--first-color);
   color: #fff;
 }
+
+@media screen and (min-width: 2560px) {
+  .tictac-img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 0.5rem;
+    justify-self: center;
+  }
+  }
